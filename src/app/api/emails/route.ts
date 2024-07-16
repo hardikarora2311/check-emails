@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { google } from "googleapis";
-import { authOptions } from "../auth/[...nextauth]/route";
 import { Base64 } from "js-base64";
+import { authOptions } from "@/lib/auth";
 
 export async function GET(req: NextRequest) {
   const session = await getServerSession(authOptions);
