@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SessionProvider } from "next-auth/react";
 import "./globals.css";
+import Providers from "@/components/Providers";
+import { ProvidersSession } from "@/components/ProvidersSessions";
+import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("grainy", inter.className)}>
+        <ProvidersSession>
+          <Providers>{children}</Providers>
+        </ProvidersSession>
+        <Footer />
+        <Toaster />
+      </body>
     </html>
   );
 }
