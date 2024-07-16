@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  IAG MagicSlides.app Submission - Hardik Arora
 
-## Getting Started
+This is an assignment webapp built with Next.js with Typescript, Tailwind CSS, Shadcn, Langchain, Gmail API, Google OAuth and OpenAI.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Next.js](https://nextjs.org/) -  A React-based web framework for building server-side rendering and static websites.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Langhcain](https://js.langchain.com/v0.2/docs/introduction/) - LangChain is a framework designed to simplify the creation of applications using large language models.
+- [Gmail API](https://developers.google.com/gmail/api/guides) - The Gmail API is a RESTful API that can be used to access Gmail mailboxes and send mail. 
+- [Google OAuth](https://developers.google.com/identity/protocols/oauth2) - Used Google OAuth for user authentication.
+- [OpenAI API](https://platform.openai.com/docs/overview) - An API for accessing new AI models developed by OpenAI.
+- [Shadcn](https://ui.shadcn.com/) - Beautifully designed components to use into your apps.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository to your local machine by running the following command in your terminal:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    git clone https://github.com/hardikarora2311/check-emails.git
+    ```
 
-## Learn More
+2. Change into the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    cd check-emails
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+4. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Open <http://localhost:3000> in your browser to see the website.
+
+## Usage
+
+> You can just run the file and use as it is, since I have also pushed the env file for easier run. It will work without any issues.
+
