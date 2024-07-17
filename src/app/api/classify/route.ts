@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   const model = new ChatOpenAI({
     apiKey: openaiKey,
     temperature: 0,
-    model: "gpt-3.5-turbo",
+    model: "gpt-4o",
   });
 
   const template = `Classify the following email into one of these categories: important, promotional, social, marketing, or spam.
@@ -28,7 +28,7 @@ Marketing: Emails related to marketing, newsletters, and notifications.
 Spam: Unwanted or unsolicited emails.
 General: If none of the above are matched, use General
 
-
+Return just one word that is: Important, Promotional, Social, Marketing, Spam, or General.
 Email:
 Subject: {subject}
 From: {from}
